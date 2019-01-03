@@ -44,6 +44,7 @@ class Upload extends CI_Controller
     $config['file_name']            = md5(round(microtime(true))).' -OPD-'.$admin_log['opd_id'];
 
     $this->load->library('upload', $config);
+    $this->upload->initialize($config);
 
     if (!$this->upload->do_upload('dok', $data['opd_id'])) {
             $error = $this->upload->display_errors();
