@@ -15,11 +15,6 @@
         <!--Morris Chart CSS -->
 		<link rel="stylesheet" href="<?php echo base_url('assets/admin/morris/morris.css'); ?>">
 
-        <!-- App css -->
-        <link href="<?php echo base_url('assets/admin/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('assets/admin/css/icons.css'); ?>" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url('assets/admin/css/style.css'); ?>" rel="stylesheet" type="text/css" />
-
         <!-- DataTables -->
         <link href="<?php echo base_url('assets/admin/plugins/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/admin/plugins/datatables/buttons.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css" />
@@ -28,6 +23,10 @@
         <!-- Multi Item Selection examples -->
         <link href="<?php echo base_url('assets/admin/plugins/datatables/select.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css" />
 
+        <!-- App css -->
+        <link href="<?php echo base_url('assets/admin/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/admin/css/icons.css'); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/admin/css/style.css'); ?>" rel="stylesheet" type="text/css" />
 
         <script src="<?php echo base_url('assets/admin/js/modernizr.min.js'); ?>"></script>
 

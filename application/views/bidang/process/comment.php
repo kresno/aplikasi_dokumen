@@ -12,7 +12,7 @@
                                         <?php foreach($dokumen as $dokumen): ?>
                                         <input type="hidden" value="<?php echo $dokumen->id; ?>" name="t_id">
                                         <div class="form-group">
-                                            <label for="jenis_dok">Jenis Dokumen</label>
+                                            <label for="jenis_dok">Perangkat Daerah</label>
                                             <input type="text" class="form-control" disabled="" value="<?php echo $dokumen->opd; ?>">
                                         </div>
                                         <div class="form-group">
@@ -28,7 +28,7 @@
                                             <textarea class="form-control" name="catatan" rows="5"></textarea>
                                         </div>
                                         <?php endforeach; ?>
-                                        <button type="submit" class="btn btn-primary">Cari</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                 </div>
                             </div>

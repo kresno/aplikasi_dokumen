@@ -59,7 +59,7 @@ class M_transact extends CI_Model
   // Start Untuk User Bidang
   public function get_file_bidang($level_id)
   {
-    $this->db->select('a.id, c.nama as jenis_dok, a.file as file, b.nama as opd, a.status as status, a.catatan_bidang as catatan');
+    $this->db->select('a.id, c.nama as jenis_dok, a.file as file, b.nama as opd, a.status as status, a.catatan_pd as catatan');
     $this->db->from('transact a');
     $this->db->join('opd b', 'b.id=a.opd_id');
     $this->db->join('document c', 'c.id=a.doc_id');
@@ -133,6 +133,7 @@ class M_transact extends CI_Model
     $this->db->join('opd b', 'b.id=a.opd_id');
     $this->db->join('document c', 'c.id=a.doc_id');
     $this->db->where('a.opd_id', $opd_id);
+    $this->db->order_by('a.created_at');
     $query = $this->db->get();
     if ($query->num_rows() > 0){
 			return $query->result();

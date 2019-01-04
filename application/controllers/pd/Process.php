@@ -33,25 +33,36 @@ class Process extends CI_Controller
       't_id' => $this->input->post('t_id'),
       'catatan' => $this->input->post('catatan_opd')
     );
+    
+    if (empty($_FILES['dok']['name'])) {
+      $this->M_transact->updateCommentPD($data);
+      echo "<script>alert('Berhasil Memperbaharui Komentar') ; window.location.href = '../dokumen' </script>";
+    } else {
+      $filename = $this->M_transact->getFile($this->input->post('t_id'));
+      $file_name = $filename[0]->file;
+      $fullfile = './public/upload/dokumen/'.$file_name;
+    
+      if(is_file($fullfile)) unlink($fullfile);
 
-    $config['upload_path']          = './public/upload/dokumen/';
-    $config['allowed_types']        = 'pdf|zip|docx|doc';
-    $config['max_size']             = 5000;
-    $config['file_name']            = $this->input->post('filename');
-
-    $this->load->library('upload', $config);
-    $this->upload->overwrite = true;
-
-    if (!$this->upload->do_upload('dok')) {
-            $error = $this->upload->display_errors();
-            // menampilkan pesan error
-            print_r($error);
-        } else {
-            $result = $this->upload->data();
-            $this->M_transact->updateCommentPD($data);
-
-            echo "<script>alert('Upload Berhasil') ; window.location.href = '../dokumen' </script>";
-        }
+      $config['upload_path']          = './public/upload/dokumen/';
+      $config['allowed_types']        = 'pdf|zip|docx|doc';
+      $config['max_size']             = 5000;
+      $config['file_name']            = $this->input->post('filename');
+  
+      $this->load->library('upload', $config);
+      $this->upload->initialize($config);
+  
+      if (!$this->upload->do_upload('dok')) {
+              $error = $this->upload->display_errors();
+              // menampilkan pesan error
+              print_r($error);
+          } else {
+              $result = $this->upload->data();
+              $this->M_transact->updateCommentPD($data);
+  
+              echo "<script>alert('Berhasil Memperbaharui File dan Komentar') ; window.location.href = '../dokumen' </script>";
+          }
+    }
   }
 
   public function doAccept($t_id)

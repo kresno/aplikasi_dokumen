@@ -24,7 +24,7 @@
                                         </thead>
 
                                         <tbody>
-                                        <?php $count=0; foreach($dokumen as $dokumen): ?>
+                                        <?php $count=0; if($dokumen>0) { foreach($dokumen as $dokumen): ?>
                                         <tr>
                                             <td> <?php echo ++$count; ?> </td>
                                             <td> <?php echo $dokumen->opd; ?> </td>
@@ -41,7 +41,7 @@
                                             </td>
                                         </tr>
                                             
-                                        <?php endforeach; ?>
+                                        <?php endforeach; }?>
                                         </tbody>
                                     </table>
                                 </div>

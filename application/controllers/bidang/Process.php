@@ -38,7 +38,7 @@ class Process extends CI_Controller
     $reponse = $this->M_transact->updateComment($data);
     if($reponse)
     {
-      echo "<script>alert('Upload Berhasil') ; window.location.href = '../download' </script>";
+      echo "<script>alert('Berhasil menambah komentar') ; window.location.href = '../download' </script>";
     } else {
       echo "gagal";
     }

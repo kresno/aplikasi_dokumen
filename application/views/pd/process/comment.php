@@ -28,7 +28,7 @@
 
                                         <div class="form-group">
                                             <label for="catatan_opd">Tambah Catatan PD</label>
-                                            <textarea class="form-control" name="catatan" rows="5"></textarea>
+                                            <textarea class="form-control" name="catatan_opd" rows="5"></textarea>
                                         </div>
                                         <?php endforeach; ?>
                                         <button type="submit" class="btn btn-primary">Perbaharui</button>
