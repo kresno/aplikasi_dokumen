@@ -27,7 +27,7 @@
                                             <label for="catatan">Tambah Catatan PD</label>
                                             <textarea class="form-control" name="catatan" rows="5"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Cari</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                 </div>
                             </div>
