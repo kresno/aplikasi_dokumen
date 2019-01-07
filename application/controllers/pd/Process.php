@@ -41,7 +41,7 @@ class Process extends CI_Controller
       $filename = $this->M_transact->getFile($this->input->post('t_id'));
       $file_name = $filename[0]->file;
       $fullfile = './public/upload/dokumen/'.$file_name;
-    
+
       if(is_file($fullfile)) unlink($fullfile);
 
       $config['upload_path']          = dirname($_SERVER["SCRIPT_FILENAME"]).'/public/upload/dokumen/';
@@ -49,6 +49,7 @@ class Process extends CI_Controller
       $config['max_size']             = 5000;
       $config['file_name']            = $this->input->post('filename');
       $config['overwrite']            = TRUE;
+      $config['file_name']            = md5(round(microtime(true))).' -OPD-'.$admin_log['opd_id'];
   
       $this->load->library('upload', $config);
       $this->upload->initialize($config);
@@ -59,6 +60,7 @@ class Process extends CI_Controller
               print_r($error);
           } else {
               $result = $this->upload->data();
+              $data['file'] = $result['file_name'];
               $this->M_transact->updateCommentPD($data);
   
               echo "<script>alert('Berhasil Memperbaharui File dan Komentar') ; window.location.href = '../dokumen' </script>";

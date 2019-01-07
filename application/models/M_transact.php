@@ -160,7 +160,8 @@ class M_transact extends CI_Model
   public function updateCommentPD($data)
   {
     $this->db->set('catatan_pd', $data['catatan'])
-             ->where('id', $data['t_id'])
+             ->set('file', $data['file'])
+             ->where('id', $data['t_id']) 
              ->update('transact');
     return true;
   }
