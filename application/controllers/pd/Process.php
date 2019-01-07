@@ -44,10 +44,11 @@ class Process extends CI_Controller
     
       if(is_file($fullfile)) unlink($fullfile);
 
-      $config['upload_path']          = './public/upload/dokumen/';
+      $config['upload_path']          = dirname($_SERVER["SCRIPT_FILENAME"]).'/public/upload/dokumen/';
       $config['allowed_types']        = 'pdf|zip|docx|doc';
       $config['max_size']             = 5000;
       $config['file_name']            = $this->input->post('filename');
+      $config['overwrite']            = TRUE;
   
       $this->load->library('upload', $config);
       $this->upload->initialize($config);
@@ -83,7 +84,7 @@ class Process extends CI_Controller
   {
     $filename = $this->M_transact->getFile($t_id);
     $file_name = $filename[0]->file;
-    $fullfile = './public/upload/dokumen/'.$file_name;
+    $fullfile = dirname($_SERVER["SCRIPT_FILENAME"]).'/public/upload/dokumen/'.$file_name;
     
     if(is_file($fullfile)) unlink($fullfile);
     $response = $this->M_transact->deleteTransact($t_id);

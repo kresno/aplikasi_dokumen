@@ -38,7 +38,7 @@ class Upload extends CI_Controller
     $data['opd_id'] = $admin_log['opd_id'];
     $data['status'] = 1;
 
-    $config['upload_path']          = './public/upload/dokumen/';
+    $config['upload_path']          = dirname($_SERVER["SCRIPT_FILENAME"]).'/public/upload/dokumen/';
 		$config['allowed_types']        = 'pdf|zip|docx|doc';
     $config['max_size']             = 5000;
     $config['file_name']            = md5(round(microtime(true))).' -OPD-'.$admin_log['opd_id'];
