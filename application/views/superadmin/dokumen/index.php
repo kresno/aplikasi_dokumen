@@ -19,7 +19,7 @@
                                             <th>Jenis Dokumen</th>
                                             <th>File</th>
                                             <th>Catatan PD</th>
-                                            <th>Aksi</th>
+                                            <th>Catatan Bappeda</th>
                                         </tr>
                                         </thead>
 
@@ -30,15 +30,8 @@
                                             <td> <?php echo $dokumen->opd; ?> </td>
                                             <td> <?php echo $dokumen->jenis_dok; ?> </td>
                                             <td> <a href="<?php echo base_url().'public/upload/dokumen/'.$dokumen->file; ?>"><?php echo $dokumen->file; ?></td>
-                                            <td> <?php echo $dokumen->catatan; ?> </td>
-                                            <td>
-                                                <?php if($dokumen->status == 1){ ?>
-                                                <a href="<?php echo base_url().'index.php/bidang/process/comment/'.$dokumen->id; ?>" class="btn btn-md btn-primary"><i class="mdi mdi-pencil"></i> Comment </a>                                               
-                                                <a href="<?php echo base_url().'index.php/bidang/process/doAccept/'.$dokumen->id; ?>" class="btn btn-md btn-success"><i class="mdi mdi-playlist-check"></i> Setujui </a>
-                                                <?php } else { ?>
-                                                <button disabled class="btn btn-md btn-info"><i class="mdi mdi-auto-fix"></i> Telah disetujui </button>
-                                                <?php } ?>
-                                            </td>
+                                            <td> <?php echo $dokumen->catatan_pd; ?> </td>
+                                            <td> <?php echo $dokumen->catatan_bidang; ?> </td>
                                         </tr>
                                             
                                         <?php endforeach; }?>

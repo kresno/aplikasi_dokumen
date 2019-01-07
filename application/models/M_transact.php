@@ -212,7 +212,7 @@ class M_transact extends CI_Model
   //start untuk superadmin
   public function get_file_admin()
   {
-    $this->db->select('a.id, c.nama as jenis_dok, a.file as file, b.nama as opd, a.status as status, a.catatan_bidang as catatan');
+    $this->db->select('a.id, c.nama as jenis_dok, a.file as file, b.nama as opd, a.status as status, a.catatan_bidang as catatan_bidang,a.catatan_pd as catatan_pd');
     $this->db->from('transact a');
     $this->db->join('opd b', 'b.id=a.opd_id');
     $this->db->join('document c', 'c.id=a.doc_id');
