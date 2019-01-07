@@ -43,6 +43,10 @@
                             </li>
 
                             <li>
+                                <a href="<?php echo base_url('index.php/pd/template'); ?>" class="waves-effect"><i class="mdi mdi-document-box"></i><span> Dokumen </span></a>
+                            </li>
+
+                            <li>
                                 <a href="<?php echo base_url('index.php/login/logout'); ?>" class="waves-effect"><i class="mdi mdi-logout"></i><span> Logout </span></a>
                             </li>
 
