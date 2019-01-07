@@ -43,7 +43,7 @@
                             </li>
 
                             <li>
-                                <a href="<?php echo base_url('index.php/pd/template'); ?>" class="waves-effect"><i class="mdi mdi-email-secure"></i><span> Dokumen </span></a>
+                                <a href="<?php echo base_url('index.php/pd/template'); ?>" class="waves-effect"><i class="mdi mdi-email-secure"></i><span> Template Dokumen </span></a>
                             </li>
 
                             <li>
