@@ -15,20 +15,20 @@
                                     </div>
 
                         			<h4 class="header-title mt-0 m-b-30">Total Dokumen</h4>
-
+                                    <?php foreach($opd as $opd): ?>
                                     <div class="widget-chart-1">
                                         <div class="widget-chart-box-1">
                                             <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#f05050 "
-                                               data-bgColor="#F9B9B9" value="0"
+                                               data-bgColor="#F9B9B9" value="<?php echo $opd->jumlah; ?>"
                                                data-skin="tron" data-angleOffset="180" data-readOnly=true
                                                data-thickness=".15"/>
                                         </div>
 
                                         <div class="widget-detail-1">
-                                            <h2 class="p-t-10 mb-0"> 0 </h2>
+                                            <h2 class="p-t-10 mb-0"> <?php echo $opd->jumlah; ?> </h2>
                                             <p class="text-muted m-b-10">Dokumen</p>
                                         </div>
-                                        
+                                    <?php endforeach; ?>
                                     </div>
                         		</div>
                             </div><!-- end col -->

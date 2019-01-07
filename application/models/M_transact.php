@@ -188,7 +188,7 @@ class M_transact extends CI_Model
 
   public function getCountTransactOpd($opd_id)
   {
-    $this->db->select('count(id) asjumlah')
+    $this->db->select('count(id) as jumlah')
               ->from('transact')
               ->where('opd_id', $opd_id);
               $query = $this->db->get();

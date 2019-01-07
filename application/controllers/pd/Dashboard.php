@@ -21,12 +21,11 @@ class Dashboard extends CI_Controller
 
     $data['opd'] = $this->M_transact->getCountTransactOpd($admin_log['opd_id']);
     
-    print_r($data);
 
-    // $this->load->view('layout/pd/header');
-    // $this->load->view('layout/pd/sidebar', $header);
-    // $this->load->view('pd/dashboard/index');
-    // $this->load->view('layout/pd/footer');
+    $this->load->view('layout/pd/header');
+    $this->load->view('layout/pd/sidebar', $header);
+    $this->load->view('pd/dashboard/index', $data);
+    $this->load->view('layout/pd/footer');
   }
 }
 
