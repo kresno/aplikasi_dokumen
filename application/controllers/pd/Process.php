@@ -28,7 +28,9 @@ class Process extends CI_Controller
   
   public function doComment()
   {
+    $admin_log = $this->auth->is_login_admin();
 
+    $header['admin_log'] = $admin_log;
     $data = array(
       't_id' => $this->input->post('t_id'),
       'catatan' => $this->input->post('catatan_opd')
