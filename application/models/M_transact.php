@@ -185,6 +185,20 @@ class M_transact extends CI_Model
       return false;
     }
   }
+
+  public function getCountTransactOpd($opd_id)
+  {
+    $this->db->select('count(id) asjumlah')
+              ->from('transact')
+              ->where('opd_id', $opd_id);
+              $query = $this->db->get();
+    if ($query->num_rows() > 0){
+      return $query->result();
+    } else {
+      return false;
+    }
+  
+  }
   //end untuk user PD
 }
 
