@@ -9,7 +9,7 @@ class Template extends CI_Controller
   {
     parent::__construct();
     $this->load->library('Auth');
-    $this->load->model('M_transact');
+    $this->load->model('M_template');
   }
 
 
@@ -20,11 +20,11 @@ class Template extends CI_Controller
     $header['admin_log'] = $admin_log;
     $opd_id = $admin_log['opd_id'];
     
-    $data['dokumen'] = $this->M_transact->get_file_opd($opd_id);
+    $data['dokumen'] = $this->M_template->get_template();
 
     $this->load->view('layout/pd/header');
     $this->load->view('layout/pd/sidebar', $header);
-    $this->load->view('pd/dokumen/index', $data);
+    $this->load->view('pd/template/index', $data);
     $this->load->view('layout/pd/footer');
   }
 }
