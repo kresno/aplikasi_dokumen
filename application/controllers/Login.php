@@ -29,7 +29,7 @@ class Login extends CI_Controller
       } else if($admin_log['level_id'] > 3){
         redirect('bidang/dashboard', 'refresh');
       } else{
-        $this->load->view('Auth/login');
+        redirect('superadmin/dashboard', 'refresh');
       }
 		}
   }

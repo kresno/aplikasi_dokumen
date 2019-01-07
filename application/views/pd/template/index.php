@@ -6,9 +6,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="card-box table-responsive">
-                                    <h4 class="m-t-0 header-title">Daftar Dokumen yang telah di upload</h4>
+                                    <h4 class="m-t-0 header-title">Daftar Template Dokumen</h4>
                                     <p class="text-muted font-14 m-b-30">
-                                        Pada Tabel ini merupakan daftar dokumen yang telah di upload oleh masing-masing perangkat daerah    
+                                        Pada Tabel ini merupakan daftar template dokumen perencanaan    
                                     </p>
 
                                     <table id="datatable" class="table table-bordered">
