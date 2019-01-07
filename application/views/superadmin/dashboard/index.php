@@ -1,4 +1,4 @@
-<div class="content-page">
+            <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
                     <div class="container-fluid">
@@ -26,7 +26,7 @@
 
                                         <div class="widget-detail-1">
                                             <h2 class="p-t-10 mb-0"> 0 </h2>
-                                            <p class="text-muted m-b-10">Dokumen</p>
+                                            <p class="text-muted m-b-10">User</p>
                                         </div>
                                         
                                     </div>

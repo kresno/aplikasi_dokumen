@@ -46,8 +46,13 @@
                                 <a href="<?php echo base_url('index.php/superadmin/template'); ?>" class="waves-effect"><i class="mdi mdi-book-open"></i><span> Dokumen </span></a>
                             </li>
 
-                            <li>
-                                <a href="<?php echo base_url('index.php/superadmin/setting'); ?>" class="waves-effect"><i class="mdi mdi-settings"></i><span> Setting </span></a>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-settings"></i><span class="badge badge-warning pull-right">3</span><span> Forms </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="<?php echo base_url('index.php/superadmin/setting/User'); ?>">User</a></li>
+                                    <li><a href="<?php echo base_url('index.php/superadmin/setting/Hakakses'); ?>">Hak Akses</a></li>
+                                    <li><a href="<?php echo base_url('index.php/superadmin/setting/Tahapan'); ?>">Tahapan</a></li>
+                                </ul>
                             </li>
 
                             <li>
