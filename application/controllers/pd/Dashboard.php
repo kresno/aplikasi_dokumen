@@ -9,6 +9,7 @@ class Dashboard extends CI_Controller
   {
     parent::__construct();
     $this->load->library('Auth');
+    $this->load->model('M_transact');
   }
 
 
