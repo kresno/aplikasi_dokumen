@@ -18,10 +18,10 @@ class Hakakses extends CI_Controller
 
     $header['admin_log'] = $admin_log;
 
-    $this->load->view('layout/bidang/header');
-    $this->load->view('layout/bidang/sidebar', $header);
-    $this->load->view('bidang/dashboard/index');
-    $this->load->view('layout/bidang/footer');
+    $this->load->view('layout/superadmin/header');
+    $this->load->view('layout/superadmin/sidebar', $header);
+    $this->load->view('superadmin/dashboard/index');
+    $this->load->view('layout/superadmin/footer');
   }
 }
 
