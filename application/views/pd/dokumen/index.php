@@ -29,7 +29,7 @@
                                             <td> <?php echo ++$count; ?> </td>
                                             <td> <?php echo $dokumen->opd; ?> </td>
                                             <td> <?php echo $dokumen->jenis_dok; ?> </td>
-                                            <td> <a href="<?php echo base_url().'public/upload/dokumen/'.$dokumen->file; ?>"><?php echo $dokumen->file; ?></td>
+                                            <td> <a href="<?php echo base_url().'public/upload/'.$dokumen->file; ?>"><?php echo $dokumen->file; ?></td>
                                             <td> <?php if($dokumen->catatan) echo $dokumen->catatan; else echo "-"; ?> </td>
                                             <td>
                                                 <?php if($dokumen->status == 1){ ?>

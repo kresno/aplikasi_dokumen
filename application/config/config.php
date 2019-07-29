@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*define timezone */
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Jakarta');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
