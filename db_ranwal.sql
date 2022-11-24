@@ -192,11 +192,10 @@ CREATE TABLE `level_users` (
 insert  into `level_users`(`id`,`nama`) values 
 (1,'Administrator'),
 (2,'PD'),
-(3,'Kecamatan'),
-(4,'Bidang PE'),
-(5,'Bidang ESDA'),
-(6,'Bidang PMM'),
-(7,'Bidang IPW');
+(3,'Sekretariat'),
+(4,'Bidang Perumahan'),
+(5,'Bidang Kawasan Permukiman'),
+(6,'Bidang Pertanahan');
 
 /*Table structure for table `menu` */
 

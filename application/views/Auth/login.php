@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sinkronisasi Dokumen - Simencrang</title>
+	<title>Sinkronisasi Dokumen Usulan</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -32,7 +32,7 @@
 
 				<form class="login100-form validate-form" method="post" action="<?php echo site_url('login/validasi'); ?>">
 					<span class="login100-form-title">
-						Login Simencrang
+						Login Dokumen Proposal
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Gunakan Username yang sama seperti RKPD Online">

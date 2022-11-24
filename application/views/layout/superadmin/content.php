@@ -66,7 +66,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    2019 © Themed By Adminto. Coderthemes.com, Bappeda Kab. Sukabumi
+                    2019 © Themed By Adminto. Coderthemes.com, Disperkim Kab. Sukabumi
                 </footer>
 
             </div>

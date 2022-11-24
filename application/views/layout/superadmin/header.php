@@ -8,7 +8,7 @@
 
         <link rel="shortcut icon" href="<?php echo base_url('assets/admin/images/favicon.ico'); ?>">
 
-        <title>Sinkronisasi Dokumen - Simencrang</title>
+        <title>Sinkronisasi Dokumen Perencanaan</title>
 
         <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.3.92/">
 
@@ -43,7 +43,7 @@
 
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a href="<?php echo base_url(); ?>" class="logo"><span>Simencrang</span><i class="mdi mdi-layers"></i></a>
+                    <a href="<?php echo base_url(); ?>" class="logo"><span>Dokumen Perencanaan</span><i class="mdi mdi-layers"></i></a>
                 </div>
 
                 <!-- Button mobile view to collapse sidebar menu -->
