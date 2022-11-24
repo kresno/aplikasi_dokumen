@@ -26,7 +26,7 @@
                                         <?php $count=0; if($dokumen>0) { foreach($dokumen as $dokumen): ?>
                                         <tr>
                                             <td> <?php echo ++$count; ?> </td>
-                                            <td> <?php echo $dokumen->opd; ?> </td>
+                                            <td> <?php echo $dokumen->nama; ?> </td>
                                             <td> <?php echo $dokumen->jenis_dok; ?> </td>
                                             <td> <a href="<?php echo base_url().'public/upload/dokumen/'.$dokumen->file; ?>"><?php echo $dokumen->file; ?></td>
                                             <td> Belum ada catatan </td>
