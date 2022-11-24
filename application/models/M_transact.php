@@ -216,7 +216,6 @@ class M_transact extends CI_Model
     $this->db->from('transact a');
     $this->db->join('opd b', 'b.id=a.opd_id');
     $this->db->join('document c', 'c.id=a.doc_id');
-    $this->db->order_by('a.created_at');
     $query = $this->db->get();
     if ($query->num_rows() > 0){
 			return $query->result();

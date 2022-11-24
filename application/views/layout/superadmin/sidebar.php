@@ -5,7 +5,7 @@
                     <!-- User -->
                     <div class="user-box">
                         <div class="user-img">
-                            <img src="<?php echo base_url('assets/admin/images/users/avatar-1.jpg'); ?>" alt="user-img" title="Mat Helme" class="rounded-circle img-thumbnail img-responsive">
+                            <img src="<?php echo base_url('assets/admin/images/users/logo_garut.png'); ?>" alt="user-img" title="Mat Helme" class="rounded-circle img-thumbnail img-responsive">
                             <div class="user-status offline"><i class="mdi mdi-adjust"></i></div>
                         </div>
                         <h5><a href="#"><?php echo strtoupper($admin_log['username']);?></a> </h5>

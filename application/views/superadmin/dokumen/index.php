@@ -8,18 +8,17 @@
                                 <div class="card-box table-responsive">
                                     <h4 class="m-t-0 header-title">Daftar Dokumen yang telah di upload</h4>
                                     <p class="text-muted font-14 m-b-30">
-                                        Pada Tabel ini merupakan daftar dokumen yang telah di upload oleh masing-masing perangkat daerah    
+                                        Pada Tabel ini merupakan daftar dokumen yang telah di upload    
                                     </p>
 
                                     <table id="datatable" class="table table-bordered">
                                         <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Perangkat Daerah</th>
-                                            <th>Jenis Dokumen</th>
+                                            <th>Nama Proposal</th>
+                                            <th>Jenis Proposal</th>
                                             <th>File</th>
-                                            <th>Catatan PD</th>
-                                            <th>Catatan Bappeda</th>
+                                            <th>Catatan Bidang</th>
                                         </tr>
                                         </thead>
 
@@ -30,8 +29,7 @@
                                             <td> <?php echo $dokumen->opd; ?> </td>
                                             <td> <?php echo $dokumen->jenis_dok; ?> </td>
                                             <td> <a href="<?php echo base_url().'public/upload/dokumen/'.$dokumen->file; ?>"><?php echo $dokumen->file; ?></td>
-                                            <td> <?php echo $dokumen->catatan_pd; ?> </td>
-                                            <td> <?php echo $dokumen->catatan_bidang; ?> </td>
+                                            <td> Belum ada catatan </td>
                                         </tr>
                                             
                                         <?php endforeach; }?>
@@ -47,7 +45,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    2019 © Themed By Adminto. Coderthemes.com, Bappeda Kab. Sukabumi
+                    2022 © Themed By Adminto. Coderthemes.com, Disperkim Kabupaten Garut
                 </footer>
 
             </div>
